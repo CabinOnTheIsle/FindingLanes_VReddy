@@ -6,6 +6,6 @@ Please find the script used to make the report under the *'FindingLane.py'* pyth
 
 ***In order for the script to run, be sure to:***
 
-  * Add the correct file path to the image/ video desired 
+  * Add the correct file path of the desired resource to be processed after both the py script and Resource folder have been saved locally.
   
-  * Uncomment out the section as necessary
+  * Uncomment out the section to perform the necessary processing.
