@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-picture = r'/Users/Vahinreddy/Desktop/pythonProject/Resources/solidYellowLeft.jpg'
-video = r'/Users/Vahinreddy/Desktop/pythonProject/Resources/solidWhiteRight.mp4'
+picture = r'[]/solidYellowLeft.jpg'     # Enter the file path of the Image here
+video = r'[]/solidWhiteRight.mp4'       # Enter the file path of the Video here
 
 img = cv2.imread(picture)
 lane_image = np.copy(img)
@@ -63,8 +63,13 @@ def make_coords(image, line_parameters):
     x2 = int((y2 - intercept) / slope)
     return np.array([x1, y1, x2, y2])
 
+## NOTE: Here the desired program can be commented out. Unncomment the section to receive the output.
 
-'''height = img.shape[0]
+## SECTION 1 - IMAGE PROCESSING
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+'''
+height = img.shape[0]
 width = img.shape[1]
 region_of_interest_vertices = [(0, height), (width / 2, height / 1.794), (width, height)]
 canny_image = canny(lane_image)
@@ -82,6 +87,10 @@ cv2.imshow("Lane Detected Image", line_image)
 cv2.waitKey(0)
 '''
 
+## SECTION 2 - VIDEO PROCESSING
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+'''
 cap = cv2.VideoCapture(video)
 while cap.isOpened():
     ret, frame = cap.read()
@@ -101,6 +110,7 @@ while cap.isOpened():
     cv2.imshow("result", line_image)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+''''
 
 cap.release()
 cv2.destroyAllWindows()
