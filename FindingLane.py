@@ -91,7 +91,11 @@ cv2.waitKey(0)
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 '''
+height = img.shape[0]
+width = img.shape[1]
 cap = cv2.VideoCapture(video)
+process_save = cv2.VideoWriter('processedVideo.mp4', cv2.VideoWriter_fourcc(*'DIVX'), 20, (width,height))
+
 while cap.isOpened():
     ret, frame = cap.read()
     height = frame.shape[0]
@@ -107,10 +111,14 @@ while cap.isOpened():
     averaged_lines = average_slope_intercept(frame, lines)
     line_image = draw_lines(frame, averaged_lines)
 
+    process_save.write(line_image)
+
     cv2.imshow("result", line_image)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-''''
+'''
 
 cap.release()
+process_save.release()
 cv2.destroyAllWindows()
+
