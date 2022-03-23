@@ -1,8 +1,8 @@
 # FindingLanes_VReddy
 
-This is the GitHub Repository for the Finding Lanes IIOT assignemnt.
+## This is the GitHub Repository for the Finding Lanes IIOT assignemnt.
 
-Please find the script used to make the report under the '' python script.
+Please find the script used to make the report under the 'FindingLane.py' python script.
 
 *_In order for the script to run, be sure to:_*
 
