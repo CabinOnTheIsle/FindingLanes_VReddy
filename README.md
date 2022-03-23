@@ -4,7 +4,7 @@
 
 Please find the script used to make the report under the 'FindingLane.py' python script.
 
-*_In order for the script to run, be sure to:_*
+***In order for the script to run, be sure to:***
 
   * Add the correct file path to the image/ video desired 
   
