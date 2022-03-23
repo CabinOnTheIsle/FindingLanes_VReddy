@@ -4,7 +4,7 @@ This is the GitHub Repository for the Finding Lanes IIOT assignemnt.
 
 Please find the script used to make the report under the '' python script.
 
-In order for the script to run, be sure to:
+*_In order for the script to run, be sure to:_*
 
   * Add the correct file path to the image/ video desired 
   
