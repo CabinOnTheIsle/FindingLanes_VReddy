@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-picture = r'[]/solidYellowLeft.jpg'     # Enter the file path of the Image here
-video = r'[]/solidWhiteRight.mp4'       # Enter the file path of the Video here
+picture = r'[]/Resources/solidYellowLeft.jpg'     # Enter the file path of the Image here
+video = r'[]/Resources/solidWhiteRight.mp4'       # Enter the file path of the Video here
 
 img = cv2.imread(picture)
 lane_image = np.copy(img)
